@@ -11,6 +11,9 @@ prereqs:
   test:
     requires:
       - Syntax::Feature::Qs: 0.2004
+  develop:
+    requires:
+       - perl: 5.014000
 
 plugins:
  - +config: Author::CSSON
