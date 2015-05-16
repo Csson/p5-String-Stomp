@@ -10,6 +10,7 @@ prereqs:
       - perl: 5.010001
   test:
     requires:
+      - syntax
       - Syntax::Feature::Qs: 0.2004
   develop:
     requires:
