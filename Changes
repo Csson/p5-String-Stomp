@@ -1,3 +1,28 @@
 Revision history for String-Stomp
 
 {{$NEXT}}
+ [API Changes]
+
+ [Bug Fixes]
+
+ [Documentation]
+
+ [Enhancements]
+
+ [Meta]
+
+ [New Features]
+
+ [Requirements]
+
+ [Revision]
+
+ [Testing]
+
+0.0101 2015-05-16T22:26:32Z CEST
+ [Requirements]
+ - Added missing test prereq (syntax)
+
+0.0100 2015-05-01T00:33:15Z CEST
+ - Initial release.
+

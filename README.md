@@ -6,7 +6,7 @@ String::Stomp - Removes empty leading and trailing lines
 
 # VERSION
 
-Version 0.0001, released 2015-05-01.
+Version 0.0101, released 2015-05-16.
 
 # SYNOPSIS
 
