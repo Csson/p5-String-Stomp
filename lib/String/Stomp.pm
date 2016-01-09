@@ -6,12 +6,8 @@ package String::Stomp;
 # VERSION
 # ABSTRACT: Removes empty leading and trailing lines
 
-use Sub::Exporter::Progressive -setup => {
-    exports => [qw/stomp/],
-    groups => {
-        default => [qw/stomp/],
-    },
-};
+use Exporter 'import';
+our @EXPORT = qw/stomp/;
 
 sub stomp($) {
     my $string = shift;
@@ -40,16 +36,16 @@ sub stomp($) {
 
     # is exactly the same as
     sub out {
-        print q{            A long
+        print q{        A long
             text.};
     }
 
 
 =head1 DESCRIPTION
 
-String::Stomp provides C<stomp>, a simple function that removes all leading and trailing lines and only consist of white space or line breaks.
+String::Stomp provides C<stomp>, a simple function that removes all leading and trailing lines that only consist of white space or line breaks.
 
-=head2 METHODS
+=head2 FUNCTIONS
 
 =head3 stomp $string
 
@@ -83,21 +79,21 @@ L<Syntax::Feature::Qs> adds C<qs> and C<qqs> that removes all leading whitespace
 
         sub out {
             print q{This is
-a multi line
+    a multi line
 
-string.};
+    string.};
         }
     }
     package Example::HereDoc {
 
         sub out {
 
-            (my $text = <<"        END") =~ s{^ {8}}{}gm;
+            (my $text = <<"            END") =~ s{^ {12}}{}gm;
                 This is
                 a multi line
 
                 string.
-            END
+                END
             
             $text =~ s{\v\z}{};
             print $text;
@@ -109,6 +105,8 @@ string.};
 =for :list
 * L<String::Trim::More>
 * L<String::Util>
-* L<qi|Syntax::Feature::Qs>
+* L<qs|Syntax::Feature::Qs>
+* L<qi|Syntax::Feature::Qi>
+
 
 =cut
