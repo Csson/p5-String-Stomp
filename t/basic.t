@@ -24,12 +24,12 @@ a multi line
 
 string.};
 
-(my $heredoc = <<"END") =~ s{^ {4}}{}gm;
-    This is
-    a multi line
+    (my $heredoc = <<"        END") =~ s{^ {8}}{}gm;
+        This is
+        a multi line
 
-    string.
-END
+        string.
+        END
 $heredoc =~ s{\v\z}{};
 
 is $plain,  $qs, 'qs equals plain';
