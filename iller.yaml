@@ -8,6 +8,7 @@ prereqs:
   runtime:
     requires:
       - perl: 5.010001
+      - Exporter
   test:
     requires:
       - syntax
