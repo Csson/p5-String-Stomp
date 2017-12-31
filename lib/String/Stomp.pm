@@ -3,7 +3,7 @@ use strict;
 use warnings;
 package String::Stomp;
 
-our $VERSION = '0.0103';
+our $VERSION = '0.0104';
 # ABSTRACT: Removes empty leading and trailing lines
 # AUTHORITY
 
