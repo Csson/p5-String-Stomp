@@ -86,7 +86,7 @@ String::Stomp provides `stomp`, a simple function that removes all leading and t
 
                 string.
                 END
-            
+
             $text =~ s{\v\z}{};
             print $text;
         }
