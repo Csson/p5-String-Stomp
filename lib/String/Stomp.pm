@@ -3,8 +3,9 @@ use strict;
 use warnings;
 package String::Stomp;
 
-# VERSION
+our $VERSION = '0.0103';
 # ABSTRACT: Removes empty leading and trailing lines
+# AUTHORITY
 
 use Exporter 'import';
 our @EXPORT = qw/stomp/;
@@ -36,8 +37,8 @@ sub stomp($) {
 
     # is exactly the same as
     sub out {
-        print q{        A long
-            text.};
+        print q{        A short
+            text};
     }
 
 
