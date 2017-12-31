@@ -95,7 +95,7 @@ L<Syntax::Feature::Qs> adds C<qs> and C<qqs> that removes all leading whitespace
 
                 string.
                 END
-            
+
             $text =~ s{\v\z}{};
             print $text;
         }
